@@ -33,7 +33,7 @@ term_size = os.get_terminal_size().columns
 captions = '''
 This tool use for bypassing 401/403, http method, httpprotocol
 '''
-caption2 = "This tool use for bypassing"
+caption2 = "A Fast 401/403 Bypasser Author [0xAgun]"
 pixels1 = (term_size//2)-(len(captions)//2)
 pixels2 = (term_size//2)-(len(caption2)//2)
 
