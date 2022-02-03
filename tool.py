@@ -49,6 +49,8 @@ note = f'''
 1. bypass 401 status
 2. bypass 403 status
 3. bypass http header
+4. bypass http protocol
+5. bypass port based method
 
 
 '''
