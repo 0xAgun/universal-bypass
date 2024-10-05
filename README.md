@@ -30,8 +30,10 @@
 
 <hr>
 
+<details>
+  <summary> <h2>Script</h2></summary>
 
-## Requirements
+  ### Requirements
 
 Install these packge before using the script
 
@@ -40,7 +42,7 @@ pip3 install requests
 pip3 install rich
 ```
 
-## How to Use
+### How to Use
 
 To start the script, run the following command
 
@@ -52,7 +54,38 @@ python3 main.py -h
 <h1 align="center">
   <br>
   <a href="https://github.com/0xAgun/universal-bypass"><img src="https://i.imgur.com/z4PWeH8.png" alt="universal-bypass"></a>
+</details>
 
+<details>
+  <summary> <h2>Docker</h2></summary>
+
+  ### Installation
+To build the Docker image, run the following command in the directory containing your `Dockerfile`:
+
+```
+docker build -t universal-bypass-image .
+```
+
+### How to Use
+
+Once the image is built, you can run the script using Docker.
+
+#### Running the Script with Arguments
+To start the script with a specific URL and options, use the following command:
+
+```
+docker run --rm -v $(pwd):/app universal-bypass-image -U https://yoursite.com/.htaccess -A
+```
+
+#### Running the Script without Arguments
+If you execute the Docker image without any arguments, it will display the help options by default:
+
+```
+docker run --rm -v $(pwd):/app universal-bypass-image
+```
+
+</details>
+  
 ### All sorts of Contributions Are welcome
 
 ## 🔗 Links
